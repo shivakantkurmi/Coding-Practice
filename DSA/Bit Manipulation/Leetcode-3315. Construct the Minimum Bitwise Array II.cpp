@@ -24,3 +24,32 @@ public:
         return ans;
     }
 };
+
+
+
+//2ND WAY TO SOLVE WITH SAME APPROACH 
+class Solution {
+public:
+    vector<int> minBitwiseArray(vector<int>& nums) {
+        // Adding 1 in any number has a property that in binary representation all the numbers on the left side of first '0' remains same and all the '1s' on the right side of the first '0' become 0;
+        // next is that the first '0' become '1'
+        // using this property we can find min optimally...
+
+        vector<int> ans;
+
+        for(auto& i: nums){
+            if(i==2){
+                ans.push_back(-1);
+            }
+            else{
+                int val = ~i;
+                int temp = val&(-val); // this will return a number which has set bit only at the position where our initial number has rightmost bit as '0';
+                temp>>=1;
+                int out = i&(~temp); // I want to make the closest '1' of the rightmost '0' as '0';
+                ans.push_back(out);
+            }
+        }
+        return ans;
+
+    }
+};
