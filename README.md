@@ -21,7 +21,6 @@ It serves as a log of my **learning journey** and consistency in coding.
 
 ## 🌐 My Coding Profiles
 
-- 🔹 Codeforces: https://codeforces.com/profile/shivakant_kurmi  
 - 🔹 LeetCode: https://leetcode.com/shivakant_kurmi  
 - 🔹 HackerRank: https://www.hackerrank.com/shivakantkurmi49  
 - 🔹 GeeksforGeeks: https://auth.geeksforgeeks.org/user/shivakant_kurmi_23bcg10140  
