@@ -10,3 +10,18 @@ public:
         return num;
     }
 };
+
+
+// 2nd way
+class Solution {
+    public:
+     int reverseBits(int n){
+        int num=0;
+        for(int i=0;i<32;i++){
+            if(n%2==0)num=(num<<1);
+            else num= (num<<1)|1;
+            n/=2;
+        }
+        return num;
+     }
+};
