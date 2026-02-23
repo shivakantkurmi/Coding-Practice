@@ -1,19 +1,22 @@
 class Solution {
-    public boolean hasAllCodes(String s, int k) {
+public:
+    bool hasAllCodes(string s, int k) {
         int need = 1 << k;
-        boolean[] seen = new boolean[need];
+        vector<bool> seen(need, false);
+
         int mask = 0, count = 0;
 
         for (int i = 0; i < s.length(); i++) {
-            mask = ((mask << 1) & (need - 1)) | (s.charAt(i) - '0');
+            mask = ((mask << 1) & (need - 1)) | (s[i] - '0');
 
             if (i >= k - 1 && !seen[mask]) {
                 seen[mask] = true;
                 count++;
-                if (count == need) return true;
+
+                if (count == need)
+                    return true;
             }
         }
-
         return false;
     }
-}
+};
