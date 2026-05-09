@@ -18,3 +18,7 @@ public:
         return ans;
     }
 };
+
+
+//Time complexity: O(Cn​ × n), where Cn​ is the nth Catalan number.
+//cn= (2n)!/(n+1)!(n)!
