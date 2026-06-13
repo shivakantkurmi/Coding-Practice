@@ -23,7 +23,8 @@ It serves as a log of my **learning journey** and consistency in coding.
 
 - 🔹 LeetCode: https://leetcode.com/shivakant_kurmi  
 - 🔹 HackerRank: https://www.hackerrank.com/shivakantkurmi49  
-- 🔹 GeeksforGeeks: https://auth.geeksforgeeks.org/user/shivakant_kurmi_23bcg10140  
+- 🔹 GeeksforGeeks: https://auth.geeksforgeeks.org/user/shivakant_kurmi_23bcg10140
+- 🔹 Codeforces: https://codeforces.com/profile/shivakantkurmi
 
 ---
 
