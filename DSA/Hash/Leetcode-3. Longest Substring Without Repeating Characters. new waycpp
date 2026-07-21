@@ -1,0 +1,17 @@
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        vector<int> last(256, -1);
+        int left = 0, ans = 0;
+
+        for (int right = 0; right < s.size(); right++) {
+            if (last[s[right]] >= left) //means this element is part of our window and has been already seen so we just change the left to that index+1 so that now our window contains only unique element
+                left = last[s[right]] + 1;
+
+            last[s[right]] = right;
+            ans = max(ans, right - left + 1);
+        }
+
+        return ans;
+    }
+};
